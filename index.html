@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Kanban Board</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-layer-group"></i>
+            <h1>Kanban<span>Flow</span></h1>
+        </div>
+        
+        <div class="header-actions">
+            <button class="btn-reset" onclick="toggleTheme()" id="theme-btn" title="เปลี่ยนธีม">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            
+            <button class="btn-reset" onclick="resetBoard()">
+                <i class="fa-solid fa-rotate-right"></i> <span class="btn-text">รีเซ็ต</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="board-container">
+        <div class="board" id="board">
+            <div class="add-column-wrapper" id="add-column-wrapper">
+                <button class="btn-add-column" onclick="createNewColumn()">
+                    <i class="fa-solid fa-plus"></i> เพิ่มคอลัมน์ใหม่
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
